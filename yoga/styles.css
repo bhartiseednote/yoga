@@ -1,0 +1,227 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #39AED8, #236E8E);
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+nav {
+    background: transparent;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s;
+    height: 70px; /* Increased height */
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+}
+
+nav a {
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; /* Added color transition */
+}
+
+nav a:hover {
+    background-color: #17516D;
+}
+
+/* Added light background style for text */
+nav.light a {
+    color: #333;
+}
+.home{
+    margin-top: 200px;
+}
+
+section {
+    padding: 27px 20px;
+    text-align: center;
+    margin-top: 90px; /* Updated margin to account for the increased height of the navbar */
+}
+#yoga_img{
+    margin: 0px;
+    width: 200px;
+}
+
+.class-card {
+    background: linear-gradient(to right, #fff, #f5f5f5);
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.class-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.benefits-section {
+    background: linear-gradient(to right, #39AED8, #236E8E);
+    color: #fff;
+    padding: 80px 20px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.benefits-item {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #17516D;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.benefits-item:nth-child(1) { transition-delay: 0.2s; }
+.benefits-item:nth-child(2) { transition-delay: 0.4s; }
+.benefits-item:nth-child(3) { transition-delay: 0.6s; }
+.benefits-item:nth-child(4) { transition-delay: 0.8s; }
+.benefits-item:nth-child(5) { transition-delay: 1.0s; }
+.benefits-item:hover {
+    background-color: #114156;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #fff, #f5f5f5);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #17516D;
+}
+
+.contact-form button {
+    background-color: #17516D;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #114156;
+}
+
+.contact-form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.kosha-section {
+    background: linear-gradient(to right, #fff, #f5f5f5);
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.kosha-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.kosha-card {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kosha-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.kosha-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.top-contact li{
+	display:inline-block;
+	margin-right:25px;
+	color:#2C2D3F;
+}
+.top-contact li:last-child{
+	margin-right:0;
+}
+.top-contact li a{
+	font-size:14px;
+}
+.top-contact li a:hover{
+	color:#1A76D1;
+}
+.top-contact li i{
+	color:#1A76D1;
+	margin-right:8px;
+}
+
+footer {
+    background: linear-gradient(to right, #236E8E, #39AED8);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
